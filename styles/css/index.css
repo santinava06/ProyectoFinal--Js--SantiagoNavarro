@@ -1,0 +1,214 @@
+@import '/node_modules/bootstrap/dist/css/bootstrap.css';
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #3f3e3e;
+  color: #fff;
+}
+
+.init {
+  background-color: #111111;
+  position: fixed;
+  z-index: 100;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  pointer-events: unset;
+}
+.init .click {
+  width: 10%;
+  transform: rotate(-160deg);
+  position: relative;
+  left: 90%;
+}
+
+.login {
+  position: relative;
+  left: 44%;
+}
+@media (max-width: 1024px) {
+  .login {
+    left: 0;
+  }
+}
+@media (max-width: 950) {
+  .login {
+    left: 0;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.subtitulo .container-1 {
+  overflow: hidden;
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+.subtitulo .container-1 input#search {
+  width: 300px;
+  height: 50px;
+  background: #000000;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #fff;
+  padding-left: 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.subtitulo .container-1 input#search::-webkit-input-placeholder {
+  color: #acb201;
+}
+.subtitulo .container-1 input#search:-ms-input-placeholder {
+  color: #acb201;
+}
+.subtitulo .container-1 button.icon {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  background: #232833;
+  height: 50px;
+  width: 50px;
+  color: #acb201;
+  opacity: 0;
+  font-size: 10pt;
+  -webkit-transition: all 0.55s ease;
+  -moz-transition: all 0.55s ease;
+  -ms-transition: all 0.55s ease;
+  -o-transition: all 0.55s ease;
+  transition: all 0.55s ease;
+}
+.subtitulo .container-1:hover button.icon, .subtitulo .container-4:active button.icon, .subtitulo .container-4:focus button.icon {
+  outline: none;
+  opacity: 1;
+  margin-left: -50px;
+}
+.subtitulo .container-1:hover button.icon:hover {
+  background: white;
+}
+
+.alumnos_formulario {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+.alumnos_formulario .logo {
+  width: 10%;
+  position: absolute;
+  left: 70%;
+}
+@media (max-width: 1024px) {
+  .alumnos_formulario {
+    flex-direction: column;
+    width: 100%;
+  }
+  .alumnos_formulario .logo {
+    display: none;
+  }
+}
+
+.alumnos {
+  border: 1px solid black;
+}
+
+.itemsTitulo {
+  position: relative;
+  left: 6px;
+  list-style: none;
+}
+
+.items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.modall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+}
+.modall .modall__container {
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+}
+.modall .modall__container .modall__title {
+  font-size: 2.5rem;
+  color: #111111;
+}
+.modall .modall__container .modall__paragraph {
+  margin-bottom: 10px;
+  color: #111111;
+}
+.modall .modall__close {
+  text-decoration: none;
+  color: #fff;
+  background-color: #3f3e3e;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color 0.3s;
+}
+.modall .modall__close:hover {
+  color: #3f3e3e;
+  background-color: rgba(80, 77, 41, 0.103);
+}
+
+.modall--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.modalLogin {
+  background-color: #111111;
+  position: fixed;
+  z-index: 100;
+  top: 3.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  pointer-events: unset;
+}
+
+/*# sourceMappingURL=index.css.map */
